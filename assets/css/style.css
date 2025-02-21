@@ -113,7 +113,9 @@
 
     .hero .slide h5 span {
         font-size: 1.5em;
-        width: 90% !important;
+        width: 100% !important;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .hero .slide p {
