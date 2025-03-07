@@ -281,7 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
       ]
     },
     {
-      title: "حلول فيتونيت",
+      title: "حلول بيتو بيور",
       categories: [
         { name: "العزل المائي", link: "solution1.html" },
         { name: "الجدران والواجهات", link: "solution2.html" },
