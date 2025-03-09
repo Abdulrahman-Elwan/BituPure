@@ -382,3 +382,18 @@
     margin-bottom: 11px;
     color: #1b1d24 !important;
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .left {
+        order: 1;
+    }
+
+    .right {
+        order: 2;
+    }
+}
