@@ -85,7 +85,7 @@
 }
 
 .container .row p {
-    font-size: 18px !important;
+    font-size: 19px !important;
     color: #ffffffd6 !important;
     font-family: "Cairo", serif !important;
 }
@@ -128,14 +128,14 @@
     }
 
     .about-left h6 {
-        font-size: 25px !important;
+        font-size: 19px !important;
         color: #494746;
         text-align: center;
         margin: 15px 0;
     }
 
     .about-left p {
-        font-size: 16px !important;
+        font-size: 12px !important;
         margin-bottom: 15px !important;
         color: #716866;
     }
