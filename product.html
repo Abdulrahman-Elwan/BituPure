@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>تفاصيل المنتج</title>
+    <!-- Logo -->
+    <link rel="icon" type="jpg" href="assets/imge/logo_navbar.png" />
+
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- Favicons -->
+    <link href="assets/imge/name-logo.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Kufi+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <!-- Main CSS File -->
+    <style>
+        .main .product-container {
+            max-width: 1200px;
+            background: #fff;
+            padding: 150px 20px 50px;
+            border-radius: 10px;
+        }
+
+        .imgeee {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .product-image {
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-details {
+            padding: 20px;
+            text-align: end;
+            color: #251804 !important;
+        }
+
+        h2,
+        h4 {
+            font-size: 2.5rem;
+            color: #b18500;
+            font-weight: bold;
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+
+        h2:after,
+        h4:after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 68px;
+            height: 3px;
+            background: #000000;
+            left: 0;
+            right: 0;
+            bottom: -15px;
+            margin: auto;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .header .branding {
+            background: rgba(0, 0, 0, 0.864) !important;
+            top: 40px !important;
+        }
+
+        .fixed-top-nav.scrolled {
+            width: 100%;
+            top: 0 !important;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .product-container {
+                padding: 15px;
+            }
+
+            .product-details {
+                text-align: center;
+            }
+
+            .product-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="topbar d-flex align-items-center">
+            <div class="container d-flex justify-content-center justify-content-md-between">
+                <div class="contact-info d-flex align-items-center">
+                    <h6>المملكة العربية السعودية</h6>
+                </div>
+                <div class="social-links d-none d-md-flex align-items-center">
+                    <a  href="tel:+966563786429">
+                        <span>تواصل معنا</span>
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="branding d-flex align-items-cente  fixed-top-nav">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between" dir="rtl">
+                <a href="index.html" class="logo d-flex align-items-center">
+
+                    <img src="assets/imge/logo=main.png" alt="">
+                </a>
+
+                <nav id="navmenu" class="navmenu">
+
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="joinUsDropdown"
+                                data-bs-toggle="dropdown">لنبني الأفضل</a>
+                            <ul class="dropdown-menu" aria-labelledby="joinUsDropdown">
+                                <li><a class="dropdown-item" href="about.html">قصتنا</a></li>
+                                <li><a class="dropdown-item" href="about.html">التزامنا</a></li>
+                                <li><a class="dropdown-item" href="about.html">ثقافتنا</a></li>
+                                <li><a class="dropdown-item" href="build.html">حياة أفضل</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown"
+                                data-bs-toggle="dropdown">لنيني المستقبل</a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="#">المشاريع</a></li>
+                                <li><a class="dropdown-item" href="sustainability.html">الاستدامة</a></li>
+                                <li><a class="dropdown-item" href="innovation.html">الابتكار</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="futureDropdown"
+                                data-bs-toggle="dropdown">منتجات وحلول </a>
+                            <ul class="dropdown-menu" id="productDropdown" aria-labelledby="futureDropdown"
+                                style="text-align: right !important;">
+                                <div id="menuContainer"></div>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="productsDropdown"
+                                data-bs-toggle="dropdown">لنيني معا</a>
+                            <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                                <li><a class="dropdown-item" href="#">انضم للعمل في بيتوبيور</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="futureDropdown"
+                                data-bs-toggle="dropdown">تسليط الضوء</a>
+                            <ul class="dropdown-menu" aria-labelledby="futureDropdown">
+                                <li><a class="dropdown-item" href="#">نمذجة معلومات البناء (BIM)</a></li>
+                                <li><a class="dropdown-item" href="#">تقرير الاستدامة</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+                </nav>
+
+
+            </div>
+
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container product-container">
+            <div class="row">
+                <div class="col-md-6 imgeee">
+                    <img id="product-img" src="" alt="" class="product-image">
+                </div>
+                <div class="col-md-6 product-details">
+                    <h2 id="product-name"></h2>
+                    <p id="product-description"></p>
+                    <h4>: المميزات</h4>
+                    <ul id="product-advantages"></ul>
+                    <p><strong>الوزن:</strong> <span id="product-weight"></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-dark text-light pt-4">
+        <div class="container">
+            <div class="row" dir="rtl">
+                <!-- القسم الأول: الشعار والوصف -->
+                <div class="col-md-3 main">
+                    <img src="assets/imge/logo=main.png" alt="شعار الشركة" class="footer-logo">
+                    <p class="footer-text">
+                        بيتوبيور، أكبر شركة محلية متخصصة في تصنيع المنتجات وتقديم الحلول العالمية، تتمتع بخبرة راسخة في
+                        السوق السعودي. نحن نقدم حلولاً متكاملة وليست مجرد مواد، مع التركيز على الجودة العالية والتقنية
+                        الألمانية في كل ما نصنعه، مما يعكس فخر الصناعة السعودية
+                    </p>
+                </div>
+
+                <div class="col-md-2 footer-section">
+                    <h5 data-key="Stay_Connected footer-text">تلقى آخر التحديثات</h5>
+                    <form class="subscribe-form" id="subscribeForm">
+                        <div class="input-group">
+                            <input type="email" id="emailInput" placeholder="Enter your email address" required
+                                aria-describedby="emailHelp" />
+                            <button type="submit" data-key="subscribe">ارسال</button>
+                        </div>
+                        <small id="emailError" class="error-message"></small>
+                    </form>
+                </div>
+
+                <!-- القسم الثاني: روابط سريعة -->
+                <div class="col-md-3">
+                    <h5>روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="build.html">لنبني الافضل</a></li>
+                        <li><a href="allProduct.html">علاماتنا التجارية</a></li>
+                        <li><a href="innovation.html">لنيني المستقبل</a></li>
+                        <li><a href="allProduct.html">منتجات</a></li>
+                        <li><a href="#">تسليط الضوء</a></li>
+                    </ul>
+                </div>
+
+                <!-- القسم الثالث: معلومات الاتصال -->
+                <div class="col-md-3">
+                    <h5>تواصل معنا</h5>
+                    <p dir="ltr"><i class="bi bi-geo-alt"></i> الرياض، المملكة العربية السعودية</p>
+                    <p dir="ltr"><i class="bi bi-envelope"></i> info@company.com</p>
+                    <p dir="ltr"><i class="bi bi-telephone"></i> +966 56 378 6429</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/966563786429"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@biut.pure"><i class="bi bi-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@biut.pure"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Scroll Top -->
+    <a href="https://wa.me/966563786429" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="https://Kit.fontawesome.com/2de93562ba.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // جلب معرف المنتج من الرابط
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get("id");
+
+        // التحقق من وجود معرف المنتج
+        if (productId !== null) {
+            const product = productsPage[productId];
+
+            if (product) {
+                document.getElementById("product-img").src = product.img;
+                document.getElementById("product-img").alt = product.alt;
+                document.getElementById("product-name").textContent = product.name;
+                document.getElementById("product-description").textContent = product.discription;
+                document.getElementById("product-weight").textContent = product.weight;
+
+                const advantagesList = document.getElementById("product-advantages");
+                Object.values(product.advantage).forEach(adv => {
+                    const li = document.createElement("li");
+                    li.textContent = adv;
+                    advantagesList.appendChild(li);
+                });
+            } else {
+                document.body.innerHTML = "<h2 style='text-align:center; margin-top:50px;'>المنتج غير موجود</h2>";
+            }
+        } else {
+            document.body.innerHTML = "<h2 style='text-align:center; margin-top:50px;'>لم يتم تحديد منتج</h2>";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
