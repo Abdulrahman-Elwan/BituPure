@@ -377,7 +377,9 @@ html::-webkit-scrollbar-track {
 
 .header .logo img {
   max-height: 36px;
-  margin-right: 8px;
+    min-width: 40px;
+    margin-right: 8px;
+    width: 140px;
 }
 
 .header .logo h1 {
