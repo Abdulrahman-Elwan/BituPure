@@ -269,11 +269,14 @@
 }
 
 .sustainability_banner_page{
-    background: url('/assets/imge/Sustainability.jpg') no-repeat center center/cover fixed;
+    background: url('/assets/imge/Sustainability.webp') no-repeat center center/cover fixed;
     color: white;
     padding: 0;
     position: relative;
     height: 50vh;
+}
+.product_banner_page{
+    background: url('/assets/imge/bg-product.jpg') no-repeat bottom center/cover fixed;
 }
 .sustainability_banner_page .sustainability-dev{
     background-color: #0000007d;
